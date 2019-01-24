@@ -1,0 +1,41 @@
+/* Utilities */
+
+.inline-list {
+	overflow: hidden;
+	
+	li {
+		display: block;
+		float: left;
+		margin-right: 15px;
+		margin-bottom: 5px;
+				
+		i {
+			padding-right: 3px;
+		}		
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.inline-list > li:first-child {
+		margin-left: 0;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.inline-list > li {
+		display: block;
+		float: left;
+		margin-left: 15px;
+	}
+	.inline-list > li:first-child {
+		margin-left: 0;
+	}
+}
+.inline-list i {
+	padding-right: 3px;
+}
+
+.page-section {
+	padding: 10px;
+	margin: 0 auto;
+	background: #e3e3e3;
+}
